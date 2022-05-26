@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.Testing;
 using Newtonsoft.Json;
-using Zgadnij_Moja_Liczbe;
+using NumberGuessing;
 using NUnit.Framework;
 using System;
 using System.IO;
@@ -12,14 +12,6 @@ namespace NumberGuessingTests
 {
     public class GamesControllerTests
     {
-
-        //private readonly HttpClient client;
-
-        //[SetUp]
-        //public void SetUp()
-        //{
-        //}
-
         [Test]
         public async Task Start_ShouldReturnNewGuidAsSessionId()
         {

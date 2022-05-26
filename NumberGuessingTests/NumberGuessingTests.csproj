@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Zgadnij Moja Liczbe\Zgadnij Moja Liczbe.csproj" />
+    <ProjectReference Include="..\NumberGuessing\NumberGuessing.csproj" />
   </ItemGroup>
 
 </Project>
