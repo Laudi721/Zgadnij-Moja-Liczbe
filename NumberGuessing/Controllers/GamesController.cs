@@ -12,7 +12,7 @@ namespace NumberGuessing.Controllers
     public class GamesController : ControllerBase
     {
         private static readonly List<Score> _games = new();
-        private static readonly int _number = new Random().Next(1, 100);
+        private static int _number;
 
         public GamesController()
         {
@@ -22,6 +22,7 @@ namespace NumberGuessing.Controllers
         public Guid Start()
         {
             var sessionId = Guid.NewGuid();
+            _number = new Random().Next(1, 100);
 
             _games.Add(new Score(sessionId));
 
